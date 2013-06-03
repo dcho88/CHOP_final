@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CHOPFinal</title>
+  <title>CHOP -- Organ Transplant SNP Database</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">CHOP -- Organ Transplant SNP Database</a>
+    <ul class="nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="http://www.chop.edu/">CHOP Offical Page</a></li>
+      <li class="divider-vertical"></li>
+      <li><a href="http://www.ncbi.nlm.nih.gov/">NCBI</a></li>
+      <li class="divider-vertical"></li>
+      <li><a href="http://genome.ucsc.edu/">UCSC Genome Browser</a></li>
+      <li class="divider-vertical"></li>
+      <li><a href="http://www.ncbi.nlm.nih.gov/projects/SNP/">dbSNP</a></li>
+      <li class="divider-vertical"></li>
+    </ul>
+  </div>
+</div>
+
+	<div class="container">
+      <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
 
 <%= yield %>
-
+	
+	</div>
 </body>
 </html>

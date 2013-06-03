@@ -1,8 +1,12 @@
 CHOPFinal::Application.routes.draw do
+  devise_for :users
+
   resources :snps
 
 
   root :to => "home#index"
+
+  #controller#action
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
