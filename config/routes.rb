@@ -8,6 +8,8 @@ CHOPFinal::Application.routes.draw do
 
   root :to => "home#index"
 
+  get '/:id', to: 'profiles#show'
+
   #controller#action
 
   # The priority is based upon order of creation:
